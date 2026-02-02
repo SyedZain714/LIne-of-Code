@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Git Activity Analytics</title>
+	<link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+	<div id="app">
+		<h3>Git Activity Analytics</h3>
+		<div>
+			<label>Platform</label>
+			<select id="platform">
+				<option value="gitlab">GitLab</option>
+				<option value="github" disabled>GitHub (coming soon)</option>
+			</select>
+		</div>
+		<div>
+			<label>User</label>
+			<input id="userSearch" type="text" placeholder="Search user (name or username)" />
+			<ul id="userResults"></ul>
+		</div>
+		<div>
+			<label>Date range</label>
+			<div id="presets">
+				<button data-range="last30">Last 30 days</button>
+				<button data-range="thisMonth">This month</button>
+				<button data-range="custom">Custom</button>
+			</div>
+			<div id="customRange" style="display:none">
+				<input id="from" type="date" />
+				<input id="to" type="date" />
+			</div>
+		</div>
+		<div>
+			<button id="run">Generate report</button>
+		</div>
+		<hr />
+		<div id="results"></div>
+	</div>
+	<script type="module" src="popup.js"></script>
+</body>
+</html> 

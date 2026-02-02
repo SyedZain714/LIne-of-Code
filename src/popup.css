@@ -1,0 +1,10 @@
+body{font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:10px}
+#app{min-width:340px}
+label{display:block;margin-top:8px;margin-bottom:4px;font-weight:600}
+input,select,button{width:100%;padding:8px;margin-top:4px}
+#presets{display:flex;gap:6px}
+#presets button{flex:1}
+#userResults{list-style:none;padding:0;margin:6px 0;max-height:160px;overflow:auto;border:1px solid #ddd}
+#userResults li{padding:6px;cursor:pointer}
+#userResults li:hover{background:#f3f4f6}
+#results{margin-top:10px} 
